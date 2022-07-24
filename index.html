@@ -21,14 +21,12 @@
         </ul>
       </div>
     </nav>
-    <div class="showcase">
-      <div class="uni-width">
+    <div class="showcase uni-width">
         <div>
           <h1 class="section-h1">THIN CRUST<br>PIZZA</h1>
           <a href="#">LET ME SEE THE MENU</a>
         </div>
         <span>OPEN FROM 10AM TO 12PM</span>
-      </div>
     </div>
   </header>
   <section class="menu">
@@ -36,12 +34,12 @@
       <h1 class="section-h1">The Menu</h1>
       <div class="menu-wrapper">
         <ul class="tab-headers">
-          <li data-target="#pizza">PIZZA</li>
-          <li>SALADS</li>
-          <li>STARTER</li>
+          <li class="tab active" data-tab-target="#pizza">PIZZA</li>
+          <li class="tab" data-tab-target="#salad">SALADS</li>
+          <li class="tab" data-tab-target="#starter">STARTER</li>
         </ul>
         <div class="tab-content">
-          <div id="pizza">
+          <div id="pizza" class="tab-section active">
             <div class="type-wrapper">
               <h1><b>Margherita</b><span id="price">$12.50</span></h1>
               <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
@@ -79,7 +77,7 @@
               <p>Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
             </div>
           </div>
-          <div id="salad">
+          <div id="salad" class="tab-section">
             <div class="type-wrapper">
               <h1>
                 <div>
@@ -103,7 +101,7 @@
               <p>Salmon, shrimp, lobster, garlic</p>
             </div>
           </div>
-          <div id="salad">
+          <div id="starter" class="tab-section">
             <div class="type-wrapper">
               <h1>
                 <div>

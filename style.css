@@ -12,7 +12,6 @@ body {
   --brownish:#8B5F5C;
   --slate-gray:#6C7B82;
   --anti-white:#DDDDDD;
-  font-family: 'Kalam', cursive;
 }
 
 /* utility  */
@@ -48,6 +47,10 @@ ul {
 }
 
 /* header section */
+header {
+  background: url('images/pizza.jpg') center/cover;
+}
+
 header nav {
   background: rgba(0,0,0,0.8);
   position:fixed;
@@ -69,13 +72,7 @@ header nav {
   color: black;
 }
 
-.showcase {
-  background: url('images/pizza.jpg');
-  background-size:cover;
-  background-position:center;
-}
-
-.showcase > div{
+.showcase{
   position: relative;
   display: grid;
   place-items: center;
@@ -89,7 +86,7 @@ header nav {
 }
 
 .showcase a {
-  background: black;
+  background: rgba(0,0,0,.9);
   padding: 1.1rem;
   border-radius: 4px;
 }
@@ -131,17 +128,13 @@ header nav {
   font-size: 1.5rem;
 }
 
-.menu ul li:hover {
-  background: #F44236;
+.tab.active {
+  background:#F44236;
 }
 
 .tab-content > div {
   padding: 2rem 1rem;
   background: white;
-}
-
-.tab-content > div:not(:last-child) {
-  margin-bottom: 2rem;
 }
 
 .tab-content h1 {
@@ -178,6 +171,14 @@ header nav {
   border-bottom: .5px solid lightgray;
 }
 
+.tab-section {
+  display: none;
+}
+
+.tab-section.active {
+  display: block;
+}
+
 /* about section */
 .about {
   background: var(--brownish);
@@ -186,7 +187,7 @@ header nav {
 
 .about > div {
   display: grid;
-  gap: 2rem;
+  gap:1.5rem;
 }
 
 .timing {
@@ -196,9 +197,9 @@ header nav {
 }
 
 .timing > div {
-  line-height: 2.5;
   text-align: center;
   margin: auto;
+  line-height: 3rem;
 }
 
 /* contact section */
@@ -207,7 +208,7 @@ header nav {
   color: white;
 }
 
-.contact div *:not(:last-child) {
+.contact > div *:not(:last-child) {
   margin-bottom: 1.2rem;
 }
 
