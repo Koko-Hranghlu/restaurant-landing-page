@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+* {
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Kalam', cursive;
+}
+
+body {
+  font-size: 1.2rem;
+  --brownish:#8B5F5C;
+  --slate-gray:#6C7B82;
+  --anti-white:#DDDDDD;
+  font-family: 'Kalam', cursive;
+}
+
+/* utility  */
+.uni-width {
+  width: min(95%, 900px);
+  margin:auto;
+}
+
+.menu, .about, .contact, footer {
+  padding: 4rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+}
+
+img {
+  width: 100%;
+  border-radius:4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0,.2);
+}
+
+.section-h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+/* header section */
+header nav {
+  background: rgba(0,0,0,0.8);
+  position:fixed;
+  top: 0;
+  width:100%;
+  z-index: 1000;
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar ul li a {
+  padding: 1rem;
+}
+
+.navbar ul li a:hover {
+  background: white;
+  color: black;
+}
+
+.showcase {
+  background: url('images/pizza.jpg');
+  background-size:cover;
+  background-position:center;
+}
+
+.showcase > div{
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  border-bottom: 1px solid white;
+}
+
+.showcase h1 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.showcase a {
+  background: black;
+  padding: 1.1rem;
+  border-radius: 4px;
+}
+
+.showcase a:hover {
+  background: white;
+  color: black;
+}
+
+.showcase span{
+  padding: 10px;
+  background: black;
+  color: white;
+  position:absolute;
+  bottom:10px;
+  left:0px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+/* menu section */
+.menu {
+  background: black;
+  color: white;
+}
+
+.menu-wrapper {
+  margin-top: 2rem;
+}
+
+.menu ul {
+  display: flex;
+  text-align: center;
+}
+
+.menu ul li {
+  flex-basis: 100%;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.menu ul li:hover {
+  background: #F44236;
+}
+
+.tab-content > div {
+  padding: 2rem 1rem;
+  background: white;
+}
+
+.tab-content > div:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.tab-content h1 {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tab-content #price, #hot, #new ,#popular, #seasonal{
+  background: grey;
+  color: white;
+  font-weight: 300;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.tab-content #hot {
+  background: red;
+}
+
+.tab-content #new, #popular, #seasonal {
+  background: silver;
+}
+
+.tab-content p {
+  color: grey;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.tab-content .type-wrapper:not(:last-child) {
+  margin-bottom: 5rem;
+  border-bottom: .5px solid lightgray;
+}
+
+/* about section */
+.about {
+  background: var(--brownish);
+  color: white;
+}
+
+.about > div {
+  display: grid;
+  gap: 2rem;
+}
+
+.timing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.timing > div {
+  line-height: 2.5;
+  text-align: center;
+  margin: auto;
+}
+
+/* contact section */
+.contact {
+  background: var(--slate-gray);
+  color: white;
+}
+
+.contact div *:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
+.contact input {
+  width: 100%;
+  padding: 1rem;
+}
+
+/* footer section */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+
