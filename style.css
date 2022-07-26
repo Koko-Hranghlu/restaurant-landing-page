@@ -130,6 +130,7 @@ header nav {
   flex-basis: 100%;
   padding: 1rem 0;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 
 .tab.active {
@@ -139,6 +140,14 @@ header nav {
 .tab-content > div {
   padding: 2rem 1rem;
   background: white;
+}
+
+.tab-section {
+  display: none;
+}
+
+.tab-section.active {
+  display: block;
 }
 
 .tab-content h1 {
@@ -176,14 +185,6 @@ header nav {
   border-bottom: .5px solid lightgray;
 }
 
-.tab-section {
-  display: none;
-}
-
-.tab-section.active {
-  display: block;
-}
-
 /* about section */
 .about {
   background: var(--brownish);
@@ -193,6 +194,10 @@ header nav {
 .about > div {
   display: grid;
   gap:1.5rem;
+}
+
+.about h2 {
+  text-align: center;
 }
 
 .timing {
