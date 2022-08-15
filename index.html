@@ -136,7 +136,7 @@
       <p><b>The chef?</b> Mr. Italiano himself</p>
       <img src="images/chef.jpg">
       <p>We are proud of our interiors.</p>
-      <img src="images/restaurant.jpg">
+      <img id="ok" src="images/restaurant.jpg">
       <h2>Opening Hours</h2>
       <div class="timing">
         <div>
@@ -162,7 +162,7 @@
       <form action="">
         <input type="text" placeholder="NAME">
         <input type="number" placeholder="HOW MANY PEOPLE">
-         <input type="date" value="PICK YOUR DATE">
+        <input type="text" placeholder="MM/DD/YYYY" onfocus="(this.type='date')" onblur="(this.type='text')">
          <input type="text" placeholder="MESSAGE / SPECIAL REQUIREMENTS">
          <input type="submit" value="SEND MESSAGE">
       </form>
